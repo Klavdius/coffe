@@ -10,15 +10,19 @@ class Location
     /**
      * @var $biom Biom
      */
+    private $biom = null;
 
-    public function __construct($location)
+    public function __construct($location,$biom)
     {
         $this->location = $location;
-        $this->setBiom();
+        $this->biom = $biom;
+        $this->code = $this->setBiom();
     }
 
     private function setBiom(){
-        $this->code = Biom::addLocation($this->location);
+        return $this->biom->addLocation($this->location);
+
+
     }
 
     public function getLocation(){
