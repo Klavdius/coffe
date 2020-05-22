@@ -8,7 +8,14 @@ class CoffeeMachine
     private $cup = null;
     private $name = null;
 
-    private function __construct($name)
+
+
+    /**
+     * @var $object Cup;
+     */
+    private $object = null;
+
+    public function __construct($name)
     {
         $this->name = $name;
         $this->coffee = 0;
@@ -16,30 +23,32 @@ class CoffeeMachine
         $this->water = 0;
     }
 
-    private function setCoffee(){
+    public function setCoffee(){
         return $this->coffee = 1;
     }
-    private function setCup(){
+    public function setCup(){
         return $this->cup = 1;
-    }private function setWater(){
+    }public function setWater(){
         return $this->water = 1;
     }
 
-    private function getCoffee(){
+    public function getCoffee(){
         return $this->coffee;
     }
-    private function getCup(){
+    public function getCup(){
         return $this->cup;
-    }private function getWater(){
+    }
+    public function getWater(){
         return $this->water;
     }
 
-    public function buildCoffee(){
+    public function buildCoffee($cup){
         if($this->coffee == 1 && $this->water == 1 && $this->cup == 1){
             $this->cup = 0;
             $this->water = 0;
             $this->coffee = 0;
-
+        $this->object = $cup;
+        return $this->object->setStat();
         }
     }
 }

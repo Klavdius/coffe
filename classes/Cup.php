@@ -6,22 +6,22 @@ class Cup
     private $name = null;
     private $stat = null;
 
-    private function __construct($name)
+    public function __construct($name)
     {
         $this->name = $name;
         $this->stat = "empty";
     }
 
-    private function getStat(){
+    public function getStat(){
         return $this->stat;
     }
 
-    private function setStat(){
-        $this->stat = "full";
+    public function setStat(){
+        return $this->stat = "full";
     }
 
-    private function resetStat(){
-        $this->stat = "empty";
+    public function resetStat(){
+        return $this->stat = "empty";
     }
 
 }

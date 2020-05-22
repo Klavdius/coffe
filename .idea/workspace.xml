@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="add1ef2b-a3c6-4430-921d-2c046c9fecc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/classes/CoffeeMachine.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/Cup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/Decot.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/Man.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Biom.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Biom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/CoffeeMachine.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/CoffeeMachine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Cup.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Cup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Decot.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Location.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Location.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Man.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Man.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +78,7 @@
       <workItem from="1589641322281" duration="4447000" />
       <workItem from="1590064680916" duration="4839000" />
       <workItem from="1590091305610" duration="2300000" />
-      <workItem from="1590130771657" duration="2181000" />
+      <workItem from="1590130771657" duration="3357000" />
     </task>
     <task id="LOCAL-00001" summary="add class Item&#10;code system">
       <created>1588686652637</created>
@@ -88,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588686652637</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add class CoffeeMachine.php, Cup">
+      <created>1590135149344</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590135149344</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,7 +103,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add object biom" />
     <MESSAGE value="add class Item&#10;code system" />
-    <option name="LAST_COMMIT_MESSAGE" value="add class Item&#10;code system" />
+    <MESSAGE value="add class CoffeeMachine.php, Cup" />
+    <option name="LAST_COMMIT_MESSAGE" value="add class CoffeeMachine.php, Cup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="111" key="#PHP" timestamp="1588669601697">
@@ -112,10 +119,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="151" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588668340233" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1588686651893">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1590135148355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1588686651893" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590135148355" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1590093654960">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

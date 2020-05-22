@@ -8,23 +8,22 @@ class Man
     private $biom = null;
     private $location = null;
     private $loot = null;
-    private $decot = null;
+
 
     /**
      * @var $biom Biom
-     * @var $decot Decot
+     *
      */
 
-    public function __construct($name,$biom,$decot)
+    public function __construct($name,$biom)
     {
         $this->name = $name;
         $this->biom = $biom;
         $this->respawn();
         //$this->location = $this->biom->getLocation();
         $this->loot = [];
-        $this->decot = $decot;
         $this->status = 101;
-        $this->decot->messege($this->status);
+
     }
 
     public function respawn(){

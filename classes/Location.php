@@ -31,7 +31,7 @@ class Location
     }
 
     public function addItem($item){
-      //  $this->item[count($this->item)] = $item;
+        $this->item[count($this->item)] = $item;
 
     }
 }

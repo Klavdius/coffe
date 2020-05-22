@@ -10,17 +10,18 @@ require_once BASE_CLASS_PATH . DS . 'Item.php';
 require_once BASE_CLASS_PATH . DS . 'Cup.php';
 require_once BASE_CLASS_PATH . DS . 'CoffeeMachine.php';
 require_once BASE_CLASS_PATH . DS . 'Man.php';
-require_once BASE_CLASS_PATH . DS . 'Decot.php';
+
 
 $house = new Biom('house');
 $room = new Location('room',$house);
 $kitchen = new Location('kitchen',$house);
-$lenta = new Decot('Cat');
 
-$Bob = new Man('Bob', $house,$lenta);
 
-$coffeeMachine = new Cof ("Philips");
-//$cup =
+$Bob = new Man('Bob', $house);
+
+$cup = new Cup("Favorite");
+$coffeeMachine = new CoffeeMachine ("Philips");
+
 
 $coffee = new Item('coffee',$house);
 $water = new Item('Water',$house);
