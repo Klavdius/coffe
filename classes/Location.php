@@ -6,7 +6,7 @@ class Location
 {
     private $location = null;
     private $code = null;
-
+    private $item= null;
     /**
      * @var $biom Biom
      */
@@ -17,6 +17,7 @@ class Location
         $this->location = $location;
         $this->biom = $biom;
         $this->code = $this->setBiom();
+        $this->item = [];
     }
 
     private function setBiom(){
@@ -27,5 +28,10 @@ class Location
 
     public function getLocation(){
         return $this->location;
+    }
+
+    public function addItem($item){
+      //  $this->item[count($this->item)] = $item;
+
     }
 }

@@ -28,9 +28,9 @@ class Biom
     }
 
 
-    public function getLocation()
+    public function getLocation($index)
     {
-        return $this->location;
+        return $this->location[$index];
     }
 
     public function getName(){
