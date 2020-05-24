@@ -5,12 +5,14 @@ class Man
 {
     /**
      * @var $biom Biom
+     *
+     */
+    private $biom = null;
+    private $name = null;
+
+    /**
      * @var $location Location
      */
-
-    private $status = null;
-    private $name = null;
-    private $biom = null;
     private $location = null;
     private $loot = null;
 
@@ -20,34 +22,62 @@ class Man
         $this->name = $name;
         $this->biom = $biom;
         $this->respawn();
-        //$this->location = $this->biom->getLocation();
         $this->loot = [];
-        $this->status = 101;
 
     }
 
     public function respawn()
     {
         $this->location = $this->biom->getLocation(0);
-        echo "$this->name in $this->location" . PHP_EOL;
+
     }
 
     public function goKitchen()
     {
         foreach ($this->biom->getLocations() as $location) {
-            if ($this->location == "kitchen") {
+            if ($location->getNameLocation() == "kitchen") {
                 $this->location = $location;
                 break;
             }
         }
 
-        echo "$this->name going to $this->location" . PHP_EOL;
+
         $this->buildCoffee();
     }
 
     public function buildCoffee()
     {
+        /**
+         * @var $coffeemach CoffeeMachine
+         */
+        $coffeemach = null;
+        $cupCoffee = null;
+        foreach ($this->location->getItems() as $value){
+            if ($value instanceof CoffeeMachine){
+                $coffeemach = $value;
+                break;
+            }
+        }
+        if (!$coffeemach->getCoffee()){
+        $coffeemach->setCoffee(1);
+        }if (!$coffeemach->getWater()){
+        $coffeemach->setWater(1);
+        }
 
+        foreach ($this->location->getItems() as $value){
+            if ($value instanceof Cup){
+                $cupCoffee = $value;
+                break;
+            }else{
+                break;
+            }
+        }
+
+        if ($coffeemach->getCoffee() && $coffeemach->getWater()){
+            $coffeemach->buildCoffee($cupCoffee);
+
+        }
+        echo $cupCoffee->getStat();
     }
 
 

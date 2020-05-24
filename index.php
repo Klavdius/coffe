@@ -27,7 +27,7 @@ $coffee = new Item('coffee',$house);
 $water = new Item('Water',$house);
 
 
-$kitchen ->addItem($cup);
+$kitchen->addItem($cup);
 $kitchen->addItem($coffee);
 $kitchen->addItem($water);
 

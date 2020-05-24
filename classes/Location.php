@@ -4,8 +4,8 @@ require_once 'Biom.php';
 
 class Location
 {
-    private $location = null;
-    private $code = null;
+    private $nameLocation = null;
+    //private $code = null;
     private $items= null;
     /**
      * @var $biom Biom
@@ -14,20 +14,21 @@ class Location
 
     public function __construct($location,$biom)
     {
-        $this->location = $location;
+        $this->nameLocation = $location;
         $this->biom = $biom;
-        $this->code = $this->setBiom();
+        $this->setBiom();
         $this->items = [];
     }
 
     private function setBiom(){
-        return $this->biom->addLocation($this->location);
+        return $this->biom->addLocation($this);
 
 
     }
 
-    public function getLocation(){
-        return $this->location;
+
+    public function getNameLocation(){
+        return $this->nameLocation;
     }
 
     public function addItem($item){

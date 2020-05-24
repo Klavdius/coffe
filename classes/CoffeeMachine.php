@@ -5,7 +5,6 @@ class CoffeeMachine
 {
     private $water = null;
     private $coffee = null;
-    private $cup = null;
     private $name = null;
 
 
@@ -19,32 +18,29 @@ class CoffeeMachine
     {
         $this->name = $name;
         $this->coffee = 0;
-        $this->cup = 0;
         $this->water = 0;
     }
 
-    public function setCoffee(){
-        return $this->coffee = 1;
+    public function setCoffee($value){
+        return $this->coffee = $value;
     }
-    public function setCup(){
-        return $this->cup = 1;
-    }public function setWater(){
-        return $this->water = 1;
+
+
+
+    public function setWater($value){
+        return $this->water = $value;
     }
 
     public function getCoffee(){
         return $this->coffee;
     }
-    public function getCup(){
-        return $this->cup;
-    }
+
     public function getWater(){
         return $this->water;
     }
 
     public function buildCoffee($cup){
-        if($this->coffee == 1 && $this->water == 1 && $this->cup == 1){
-            $this->cup = 0;
+        if($this->coffee && $this->water){
             $this->water = 0;
             $this->coffee = 0;
         $this->object = $cup;
