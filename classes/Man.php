@@ -15,9 +15,7 @@ class Man
     private $loot = null;
 
 
-
-
-    public function __construct($name,$biom)
+    public function __construct($name, $biom)
     {
         $this->name = $name;
         $this->biom = $biom;
@@ -28,20 +26,28 @@ class Man
 
     }
 
-    public function respawn(){
+    public function respawn()
+    {
         $this->location = $this->biom->getLocation(0);
         echo "$this->name in $this->location" . PHP_EOL;
     }
-    public function goKitchen(){
-        for ($index = 0; $this->location !== "kitchen"; $index++){  //bad
-            $this->location = $this->biom->getLocation($index);
+
+    public function goKitchen()
+    {
+        foreach ($this->biom->getLocations() as $location) {
+            if ($this->location == "kitchen") {
+                $this->location = $location;
+                break;
+            }
         }
-            echo "$this->name going to $this->location" . PHP_EOL;
-    $this->buildCoffee();
+
+        echo "$this->name going to $this->location" . PHP_EOL;
+        $this->buildCoffee();
     }
 
-    public function buildCoffee(){
-        
+    public function buildCoffee()
+    {
+
     }
 
 

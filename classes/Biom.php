@@ -5,7 +5,7 @@ require_once 'Location.php';
 class Biom
 {
     private $name = null;
-    private $location = null;
+    private $locations = null;
     private $code = null;
     private $itemCode = null;
     private $listItem = null;
@@ -14,11 +14,11 @@ class Biom
         $this->name = $name;
         $this->code = 0;
         $this->itemCode = 0;
-        $this->location = [];
+        $this->locations = [];
         $this->listItem = [];
     }
     public function addLocation($location){
-        $this->location[$this->code] = $location;
+        $this->locations[$this->code] = $location;
         return $this->code++;
     }
 
@@ -30,7 +30,12 @@ class Biom
 
     public function getLocation($index)
     {
-        return $this->location[$index];
+        return $this->locations[$index];
+    }
+
+    public function getLocations()
+    {
+        return $this->locations;
     }
 
     public function getName(){
