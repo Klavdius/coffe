@@ -34,4 +34,8 @@ class Location
         $this->item[count($this->item)] = $item;
 
     }
+
+    public function getItem(){
+        return $this->item;
+    }
 }

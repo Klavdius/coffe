@@ -3,6 +3,11 @@
 
 class Man
 {
+    /**
+     * @var $biom Biom
+     * @var $location Location
+     */
+
     private $status = null;
     private $name = null;
     private $biom = null;
@@ -10,10 +15,7 @@ class Man
     private $loot = null;
 
 
-    /**
-     * @var $biom Biom
-     *
-     */
+
 
     public function __construct($name,$biom)
     {
@@ -39,7 +41,7 @@ class Man
     }
 
     public function buildCoffee(){
-
+        
     }
 
 

@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="add1ef2b-a3c6-4430-921d-2c046c9fecc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/CoffeeMachine.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/CoffeeMachine.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Cup.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Cup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Decot.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Location.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Location.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Man.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Man.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,9 @@
       <workItem from="1589641322281" duration="4447000" />
       <workItem from="1590064680916" duration="4839000" />
       <workItem from="1590091305610" duration="2300000" />
-      <workItem from="1590130771657" duration="3357000" />
+      <workItem from="1590130771657" duration="3455000" />
+      <workItem from="1590164127353" duration="280000" />
+      <workItem from="1590321952057" duration="1396000" />
     </task>
     <task id="LOCAL-00001" summary="add class Item&#10;code system">
       <created>1588686652637</created>
@@ -94,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590135149344</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix class CoffeeMachine.php, Cup">
+      <created>1590136314543</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590136314543</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,7 +109,8 @@
     <MESSAGE value="add object biom" />
     <MESSAGE value="add class Item&#10;code system" />
     <MESSAGE value="add class CoffeeMachine.php, Cup" />
-    <option name="LAST_COMMIT_MESSAGE" value="add class CoffeeMachine.php, Cup" />
+    <MESSAGE value="fix class CoffeeMachine.php, Cup" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix class CoffeeMachine.php, Cup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="111" key="#PHP" timestamp="1588669601697">
@@ -119,55 +125,55 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="151" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588668340233" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1590135148355">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1590136313646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1588686651893" />
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590135148355" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590136313646" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1590093654960">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590093654960" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588670854631" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1590093837697">
+    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1590323231318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590093837697" />
+    <state width="938" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590323231318" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588671425031" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1590093837697">
+    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1590323231318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590093837697" />
+    <state width="938" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590323231318" />
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588671425031" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1590093837696">
+    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1590323231318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590093837696" />
+    <state width="938" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590323231318" />
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588671425031" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1590093837697">
+    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1590323231318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590093837697" />
+    <state width="938" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590323231318" />
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588671425031" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1590093837697">
+    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1590323231318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590093837697" />
+    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590323231318" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588671425031" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1590093837697">
+    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1590323231318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590093837697" />
+    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590323231318" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588671425031" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1590093837697">
+    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1590323231318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590093837697" />
+    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590323231318" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588671425031" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1590093837697">
+    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1590323231318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590093837697" />
+    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1590323231318" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588671425031" />
     <state x="1159" y="314" key="NewPhpClassDialog" timestamp="1590134660770">
       <screen x="0" y="0" width="1920" height="1040" />
